@@ -1,0 +1,126 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="custom.css">
+
+</head>
+<body>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container" style="display:none">
+		<form action="#">
+			<h1>Create Account</h1>
+			<div class="social-container">
+				<a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div>
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<img src="images/front.jpg">
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				
+				<form action="#" id="flogin">
+			<h1>Login</h1>
+		    <br><br>
+			
+			<label>
+				Email
+			</label>
+			<input type="email" />
+			<label style="margin-left: -204px;">Password</label>
+			<input type="password"/>
+			<br><br>
+			<button>Login</button>
+			
+			<hr style="width:30%;text-align:left;margin-left:0">
+		  <span style="margin-top: -18px;">or connect with</span>
+		  <hr style="width:30%;text-align:right;margin-left:0;margin-left: 196px;
+    margin-top: -9px">
+				<div>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+			</div>
+			<div>
+			<span>Don't have an account ?</span> <span><a  style="color:blue;" id="bsignup" href="#signup">Signup</a></span>
+			</div>
+		</form>
+		
+		
+			<form action="#" id="sign_p" style="display:none">
+			<h1>Sign Up</h1>
+		    
+			<label>
+				Name
+			</label>
+			<input type="email" />
+			<label>
+				Email
+			</label>
+			<input type="email" />
+			<label style="margin-left: -204px;">Password</label>
+			<input type="password"/>
+			<label style="margin-left: -204px;">Confirm Password</label>
+			<input type="password"/>
+			<br>
+			<button>Sign Up</button>
+			<button class="ghost" id="signUp">Sign Up</button>
+
+		  <span style="margin-top: -40px;">or connect with</span>
+		 
+				<div>
+				<a href="#" class="fa fa-facebook"></a>
+				<a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+			</div>
+			<div>
+			<span>Don't have an account ?</span> <span><a  style="color:blue;" id="blogin" href="#">login</a></span>
+			</div>
+		</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer>
+	
+</footer>
+<script>
+$(document).ready(function(){
+  $("#bsignup").click(function(){
+    $("#sign_p").show();
+	$("#flogin").hide();
+  });
+  
+  $("#blogin").click(function(){
+    $("#sign_p").hide();
+	$("#flogin").show();
+  });
+ 
+});
+</script>
+
+</body>
+
+</html>
